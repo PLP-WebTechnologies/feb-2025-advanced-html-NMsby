@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <!-- Basic styling to make the page look better -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        header, footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        /* Form styling */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .radio-group, .checkbox-group {
+            margin: 10px 0;
+        }
+        .radio-group label, .checkbox-group label {
+            font-weight: normal;
+            display: inline;
+            margin-left: 5px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        /* Image styling */
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        /* Audio and video styling */
+        audio, video {
+            width: 100%;
+            margin: 15px 0;
+        }
+        figure {
+            margin: 0;
+            text-align: center;
+        }
+        figcaption {
+            font-style: italic;
+            text-align: center;
+            margin-top: 8px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Advanced HTML5 Elements and Forms</h1>
+        <p>Demonstration of various HTML5 features including lists, tables, forms, and multimedia</p>
+    </header>
+
+    <!-- Lists section -->
+    <section id="lists-section">
+        <h2>HTML Lists</h2>
+        
+        <!-- Ordered list with Roman numerals -->
+        <h3>Top 5 Benefits of HTML5:</h3>
+        <ol type="I">
+            <li>Improved Semantics with New Elements</li>
+            <li>Enhanced Form Validation and Input Types</li>
+            <li>Native Multimedia Support (Audio and Video)</li>
+            <li>Canvas for Advanced Graphics and Animations</li>
+            <li>Better Mobile Compatibility and Responsive Design</li>
+        </ol>
+    </section>
+
+    <!-- Image section -->
+    <section id="image-section">
+        <h2>External Image Example</h2>
+        
+        <figure class="image-container">
+            <!-- External image from Pexels -->
+            <img src="https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg" 
+                 alt="Computer coding on screen - web development concept"
+                 width="800">
+            <figcaption>Web Development and Coding (Source: Pexels)</figcaption>
+        </figure>
+    </section>
+
+    <!-- Table section -->
+    <section id="table-section">
+        <h2>Contact Information Table</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Smith</td>
+                    <td>123 Main Street, New York, NY</td>
+                    <td>+1 (555) 123-4567</td>
+                    <td>john.smith@example.com</td>
+                </tr>
+                <tr>
+                    <td>Maria Rodriguez</td>
+                    <td>456 Park Avenue, Boston, MA</td>
+                    <td>+1 (555) 987-6543</td>
+                    <td>maria.r@example.com</td>
+                </tr>
+                <tr>
+                    <td>David Johnson</td>
+                    <td>789 Oak Drive, Chicago, IL</td>
+                    <td>+1 (555) 456-7890</td>
+                    <td>david.j@example.com</td>
+                </tr>
+                <tr>
+                    <td>Sarah Williams</td>
+                    <td>101 Pine Street, San Francisco, CA</td>
+                    <td>+1 (555) 789-0123</td>
+                    <td>sarah.w@example.com</td>
+                </tr>
+                <tr>
+                    <td>Michael Brown</td>
+                    <td>202 Cedar Lane, Austin, TX</td>
+                    <td>+1 (555) 321-6547</td>
+                    <td>michael.b@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Multimedia section -->
+    <section id="multimedia-section">
+        <h2>HTML5 Multimedia Elements</h2>
+        
+        <!-- Audio element -->
+        <h3>Audio Element Example</h3>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            <source src="sample-audio.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <!-- Video element -->
+        <h3>Video Element Example</h3>
+        <video width="100%" height="auto" controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            <source src="sample-video.webm" type="video/webm">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <!-- Form section -->
+    <section id="form-section">
+        <h2>Registration Form</h2>
+        
+        <form action="#" method="post">
+            <!-- Name field - required -->
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required 
+                       placeholder="Enter your full name" 
+                       pattern="[A-Za-z\s]+" 
+                       title="Name should only contain letters and spaces">
+            </div>
+            
+            <!-- Email field - required with validation -->
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required 
+                       placeholder="Enter your email address"
+                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            </div>
+            
+            <!-- Password field - required with minimum length -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required 
+                       placeholder="Choose a password (min. 8 characters)"
+                       minlength="8"
+                       title="Password must be at least 8 characters long">
+            </div>
+            
+            <!-- Date field -->
+            <div class="form-group">
+                <label for="birthdate">Date of Birth:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+            
+            <!-- Dropdown menu -->
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">-- Select your country --</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="au">Australia</option>
+                    <option value="in">India</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <!-- Radio buttons -->
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="non-binary" name="gender" value="non-binary">
+                    <label for="non-binary">Non-binary</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="prefer-not" name="gender" value="prefer-not">
+                    <label for="prefer-not">Prefer not to say</label>
+                </div>
+            </div>
+            
+            <!-- Checkboxes -->
+            <div class="form-group">
+                <label>Interests (select all that apply):</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="web-dev" name="interests" value="web-dev">
+                    <label for="web-dev">Web Development</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="mobile-dev" name="interests" value="mobile-dev">
+                    <label for="mobile-dev">Mobile Development</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="ui-ux" name="interests" value="ui-ux">
+                    <label for="ui-ux">UI/UX Design</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="data-science" name="interests" value="data-science">
+                    <label for="data-science">Data Science</label>
+                </div>
+            </div>
+            
+            <!-- Comments field -->
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" 
+                          placeholder="Share any additional information..."></textarea>
+            </div>
+            
+            <!-- Terms and conditions checkbox - required -->
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms and conditions</label>
+            </div>
+            
+            <!-- Submit button -->
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2025 Advanced HTML5 Demo</p>
+    </footer>
+</body>
+</html>
